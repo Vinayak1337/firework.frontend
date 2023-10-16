@@ -35,22 +35,15 @@ const callApi = async (url, data = null, method = 'GET') => {
 	}
 };
 
+export const baseUrl = 'https://firework-backend.onrender.com';
+
 const Api = {
-	sendYouTubeUrl: data =>
-		callApi(
-			`https://firework-backend.herokuapp.com/youtube/post`,
-			data,
-			'POST'
-		),
-	addOverlay: data =>
-		callApi(`https://firework-backend.herokuapp.com/layout/add`, data, 'POST'),
-	deleteVideo: url =>
-		callApi(`https://firework-backend.herokuapp.com/delete/video`, url, 'POST')
+	sendYouTubeUrl: data => callApi(`${baseUrl}/youtube/post`, data, 'POST'),
+	addOverlay: data => callApi(`${baseUrl}/layout/add`, data, 'POST'),
+	deleteVideo: url => callApi(`${baseUrl}/delete/video`, url, 'POST')
 };
 
-export const baseUrl = 'https://www.tellytell.info';
-
-// export const baseUrl = 'http://localhost:3000';
+// export const baseUrl = 'http://localhost:5000';
 
 export const useLogger = (...values) => {
 	useEffect(() => {
