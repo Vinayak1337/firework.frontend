@@ -2,11 +2,7 @@
 
 This repository contains the frontend for the Firework application. It provides a user-friendly interface to interact with the backend services and functionalities.
 
-Written in ReactJs, utilizing technologies such as React-Router for mimicking like multi-page website, redux-toolkit for global state management.
-
-## Overview
-
-Before diving into the frontend, ensure that the backend is set up and running. For backend setup, refer to [firework.backend](https://github.com/Vinayak1337/firework.backend).
+Written in ReactJs, utilizing technologies such as React-Router for mimicking like multi-page website, redux-toolkit for global state management, among others.
 
 ## Live Demo
 
